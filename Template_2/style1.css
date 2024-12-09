@@ -1,0 +1,217 @@
+body {
+    background-color: rgb(247, 181, 107);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.container {
+    
+    width: 90%;
+    max-width: 780px; /* Adjust as needed */
+    min-height: 750px;
+    margin: 60px;
+    position: relative;
+    background: #2b2c2c;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0 5px 15px rgb(0, 0, 0);
+}
+
+.container .left-side {
+   position: relative;
+   background: #ffffff;
+   min-height: 800px;
+   padding: 40px;
+}
+
+
+/* styles.css */
+
+
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 10px solid rgba(255, 255, 255, 0.2);
+}
+.profileText .striped-container {
+    background: repeating-linear-gradient(65deg, rgb(255, 153, 0), rgb(255, 153, 0) 20px,rgb(255, 153, 0) 20px, rgb(255, 153, 0) 40px); /* Adjust colors and dimensions as needed */
+    text-align: right; /* Center the text horizontally */
+    padding: 4px; /* Add padding for spacing around the text */
+    
+    width: 400px; /* Increase the width as desired */
+    margin: 0 auto; 
+    transform: translate(-10%, 20%);
+}
+.centered-text {
+    color: #2b2c2c; /* Set text color to contrast with the background */
+    font-size: 20px; 
+    letter-spacing: 0.2em;
+    margin: 0;
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    margin: 9px 0px;
+   
+    }
+    .box .year ul {
+        list-style: none;
+        min-width: 163px;
+        margin-bottom: 10px; /* Add some spacing between list items if needed */
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center;
+    }
+    .year ul::before {
+        content: ''; /* Add the square bullet */
+        width: 15px; /* Set your desired width */
+        height: 15px; /* Set your desired height */
+        background-color:rgb(255, 153, 0); /* Set the color to yellow */
+        margin-right: 10px; /* Adjust spacing between the square and text */
+    }
+   .box .year ul li h5 {
+        text-transform: uppercase;
+        color: #000000;
+        font-weight: 600;
+       
+    }
+    .box .text h5 {
+        text-transform: uppercase;
+        color: #000000;
+        
+    }
+     .box .text p {
+        font-size: 12px;
+    }
+    .container.left-side {
+    position: relative;
+    background: #2b2c2c;
+    padding: 40px;
+    
+}
+    .footer {
+        background-color: rgb(255, 153, 0); /* Background color of the footer */
+        color: #fff; /* Text color of the footer */
+        padding: 12px; /* Add padding to the footer as needed */
+        width: 120%; /* Make the footer full-width */
+        transform: translate(0%, 300%);
+    }
+    .container .right-side {
+        position: relative;
+        background: #2b2c2c;
+        padding: 40px;
+        
+    
+    }
+     .contact {
+        padding-top: 40px;
+    }
+    .title {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    .contact ul {
+        position: relative;
+    }
+    .contact ul li {
+        position: relative;
+        list-style: none;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+    .contact ul li .icon {
+        display: inline-block;
+        width: 30px;
+        font-size: 18px;
+        color: rgb(255, 153, 0);
+    }
+    .contact ul li span {
+        color: #fff;
+        font-weight: 100;
+    }
+    .button1 {
+        background-color: #2b2c2c; 
+        border: none;
+        color: white;
+        padding: 9px;
+        text-align: center;
+        width:80%;
+        height:100%;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 2px 4px;
+        border-radius: 1px;
+        border: 3px solid rgb(255, 153, 0);
+      }
+      .button {
+        background-color: rgb(255, 153, 0); 
+        border: none;
+        color: white;
+        padding: 9px;
+        text-align: center;
+        width:150%;
+        height:100%;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 2px 4px;
+        border-radius: 1px;
+        border: 13px solid rgb(255, 153, 0);
+        transform: translate(-13.5%, 2%)
+      }
+      .Languages ul {
+        list-style: none;
+        color: #fff;
+    }
+    
+    .Languages .percent {
+        position: relative;
+        width: 100%;
+        height: 16px;
+        background: #2b2c2c;
+        display: block;
+        margin-top: 5px;
+        border: 1px solid rgb(255, 153, 0);
+        
+    }
+    
+    .Languages .percent div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: rgb(255, 153, 0);
+    }
+    .interest ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .iinterest ul li {
+        list-style: none;
+        color: #333;
+        font-weight: 500;
+        margin: 10px 0;
+    }
+    .interest ul li .fa {
+        color: #fff;
+        font-size: 24px;
+        width: 20px;
+        
+    }
